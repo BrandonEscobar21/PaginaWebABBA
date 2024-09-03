@@ -40,12 +40,21 @@ header {
     #final{
         flex-direction: column;
     }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input{
+        padding: 15px;
+    }
 }
 
 #menu a{
     text-decoration: none;
     color: white;
-    padding-right:40px;
+    padding-right:30px;
     cursor: pointer;
 }
 
@@ -148,9 +157,46 @@ footer{
     height: 30px;
 }
 
-.audio{
-    display:flex;
+.largot{
+    height: 400px;
+}
+
+form{
+    padding: 50px 55px;
+    background-color: #e5c250;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    width: 400px;
+}
+
+.input-group{
+    display: flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    text-align:left;
+}
+
+label{
+    font-size:15px;
+    font-weight: 600;
+}
+
+input, textarea, select{
+    padding: 10px 14px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn{
+    font-size: 18px;
+    border-radius: 15px;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    background-color: #3b4fb1;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #6c78b4;
 }
