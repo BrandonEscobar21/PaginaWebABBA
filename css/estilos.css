@@ -5,18 +5,18 @@
     background-position: center;
     color: #ffffff;
     margin: 0;
-    font-family: sans-serif;
+    font-family:Arial;
 }
 
 
 header {
     display: flex;
-    height: 80px;
+    min-height: 80px;
     justify-content: space-between;
     align-items: center;
     background-color: #D4AF37;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 #logo {
@@ -24,10 +24,29 @@ header {
     align-items: center;
 }
 
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .historia{
+        flex-direction: column;
+    }
+
+    #final{
+        flex-direction: column;
+    }
+}
+
 #menu a{
     text-decoration: none;
     color: white;
-    padding-right:40px; 
+    padding-right:40px;
+    cursor: pointer;
 }
 
 #menu a:hover{
@@ -88,7 +107,7 @@ footer{
 }
 
 .texto{
-    margin: 10px 100px;
+    margin: 10px 40px;
     font-size: 20px;
 }
 
@@ -100,4 +119,38 @@ footer{
 
 .image{
     margin: 20px;
+    border-radius: 10px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 15px;
+}
+
+.ancho{
+    text-align: center;
+    background-color: beige;
+    color: black;
+    height: 100px;
+    width: 600px;
+}
+
+.largo {
+    text-align: center;
+    background-color: beige;
+    color: black;
+}
+
+.cabecera {
+    background-color: #D4AF37;
+    height: 30px;
+}
+
+.audio{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
